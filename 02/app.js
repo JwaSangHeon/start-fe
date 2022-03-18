@@ -42,6 +42,8 @@
 //   console.log(arr[i]);
 // }
 
+
+
 // create
 var todos = ['운동'];
 
@@ -63,7 +65,7 @@ console.log(updateIndex);
 todos[updateIndex] = '공부';
 console.log(todos);
 
-
+// delete
 var deleteTodo = '공부';
 var newTodos = todos.filter(function(todo) {
   return todo !== deleteTodo;
