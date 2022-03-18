@@ -35,13 +35,13 @@
 //   }
 // }
 
-var sum = 0;
-while (true) {
-  var num = prompt('수를 입력하세요');
-  sum += Number(num);
-  if (num === null){
-    break;
-  }
-}
-console.log(sum);
+// var sum = 0;
+// while (true) {
+//   var num = prompt('수를 입력하세요');
+//   sum += Number(num);
+//   if (num === null){
+//     break;
+//   }
+// }
+// console.log(sum);
 
