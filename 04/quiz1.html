@@ -69,10 +69,12 @@
 
       let page = 1;
       var str = "";
+      const imgNum = 3;
+      const maxPage = 6;
 
       pageNum.innerText = page;
 
-      for (var i = 0; i < 3; i++) {
+      for (var i = 0; i < imgNum; i++) {
         str += '<img src="' + todayPhoto[i].img + '"> ';
       }
       wrap.innerHTML = str;
@@ -83,7 +85,7 @@
           pageNum.innerText = page;
           str = "";
           let i = page - 1;
-          for (i; i < page + 2; i++) {
+          for (i; i < page + imgNum - 1; i++) {
             str += '<img src="' + todayPhoto[i].img + '"> ';
           }
           wrap.innerHTML = str;
@@ -93,7 +95,7 @@
       });
 
       right.addEventListener("click", () => {
-        if (page < 6) {
+        if (page < maxPage) {
           page++;
           pageNum.innerText = page;
           str = "";
