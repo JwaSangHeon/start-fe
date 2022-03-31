@@ -68,15 +68,15 @@
       const pageNum = document.querySelector("#pageNum");
 
       let page = 1;
+      var str = "";
+
       pageNum.innerText = page;
 
-      var str = "";
       for (var i = 0; i < 3; i++) {
         str += '<img src="' + todayPhoto[i].img + '"> ';
       }
       wrap.innerHTML = str;
 
-      const img = document.querySelector;
       left.addEventListener("click", () => {
         if (page > 1) {
           page--;
@@ -91,6 +91,7 @@
 
         console.log(str);
       });
+
       right.addEventListener("click", () => {
         if (page < 6) {
           page++;
